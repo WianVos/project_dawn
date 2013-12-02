@@ -1,0 +1,4 @@
+---
+ application: tst1
+ template: single-small 
+ action: create

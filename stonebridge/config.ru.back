@@ -1,0 +1,50 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'ruote'
+require 'ruote-kit'
+require 'ruote/storage/fs_storage'
+require 'ruote/part/storage_participant'
+
+
+Bundler.require(:default)
+
+# require the sinatra modules
+require File.dirname(__FILE__) + "/lib/base.rb"
+require File.dirname(__FILE__) + "/lib/jobs.rb"
+
+#require participants
+Dir["#{File.dirname(__FILE__)}/lib/*.rb"].each { |f| load(f) }
+
+
+
+
+RuoteKit.engine = Ruote::Engine.new(
+  Ruote::Worker.new(
+    Ruote::FsStorage.new('ruote_work')))
+
+RuoteKit.engine.register do
+  catchall
+end
+
+
+
+RuoteKit.engine.noisy = 'true'
+
+
+RuoteKit.engine.register_participant :storage, Ruote::StorageParticipant
+RuoteKit.engine.register_participant  /loader/, Stonebridge::Loader
+RuoteKit.engine.register_participant  /^jira_/, Stonebridge::Jira_participant
+
+use Rack::CommonLogger
+use Rack::Lint
+use Rack::ShowExceptions
+# Slot into the stack
+run RuoteKit::Application
+
+map "/base" do
+    run Base
+end
+
+map "/jobs" do
+    run Jobs
+end
