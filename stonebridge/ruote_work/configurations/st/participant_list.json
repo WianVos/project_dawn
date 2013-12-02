@@ -1,1 +1,0 @@
-{"type":"configurations","_id":"participant_list","list":[["^.+$",["Ruote::StorageParticipant",{}]],["^storage$",["Ruote::StorageParticipant",{}]],["loader",["Stonebridge::Loader",{}]],["^jira_",["Stonebridge::Jira_participant",{}]]],"put_at":"2013-12-02 15:03:07.859223 UTC","_rev":229}
