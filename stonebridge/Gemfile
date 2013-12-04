@@ -8,9 +8,5 @@ gem 'ruby2ruby' , '2.0.2'
 gem 'sinatra'
 gem 'rack'
 gem 'jira4r'
-<<<<<<< HEAD
 gem 'rest-client'
-gem 'json_pure'
-=======
 gem 'json'
->>>>>>> 437e7eabd6436c926992107a2a4f8e6562a500e4
