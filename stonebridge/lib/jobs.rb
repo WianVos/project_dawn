@@ -4,8 +4,6 @@ require 'ruote'
 require 'yaml'
 
 class Jobs < Sinatra::Base
-
-    
     get '/', :provides => 'html' do
         p  RuoteEngine.processes
         
@@ -44,11 +42,16 @@ class Jobs < Sinatra::Base
     get '/templates' , :provides => 'yaml' do
         p 'not yet implemented'
     end
+    
+
+    options '/order' do
+        headers['Access-Control-Allow-Origin'] = "*"
+        headers['Access-Control-Allow-Methods'] = "GET, POST, PUT, DELETE, OPTIONS"
+        headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
+    end
+
 
     post '/order' do 
-
-     
-
 
       #get the body good and ready
       request.body.rewind
@@ -58,7 +61,7 @@ class Jobs < Sinatra::Base
 
       # get the template
        template_path = "etc/templates"
-       template_filename = File.join(template_path, "#{order_hash['template'] }.yaml")
+       template_filename = File.join(template_path, "#{order_hash['applicatieserver']}-#{order_hash['template']}.yaml")
        template = YAML::load(File.open(template_filename))
       
         # add the template to the order_hash
