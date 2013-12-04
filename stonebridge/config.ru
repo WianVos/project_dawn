@@ -45,7 +45,7 @@ RuoteEngine.noisy =  'true'
 
 # Mapping participant names to participant classes. These classes must be present in ../lib for now.
 RuoteEngine.register /^loader_/, Loader
-RuoteEngine.register /^jira_*/, Jira
+RuoteEngine.register /^jira_*/, Jira_participant
 
 
 

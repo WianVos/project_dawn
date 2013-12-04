@@ -1,0 +1,144 @@
+ {
+  "expand": "renderedFields,names,schema,transitions,operations,editmeta,changelog",
+  "id": "12374425",
+  "self": "http://jira.k94.kvk.nl/jira/rest/api/latest/issue/12374425",
+  "key": "ZMM-523",
+  "fields": {
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "summary": "test taak",
+    "timetracking": {
+    },
+    "issuetype": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/issuetype/3",
+      "id": "3",
+      "description": "Een uit te voeren opdracht binnen het project",
+      "iconUrl": "http://jira.k94.kvk.nl/jira/images/icons/issuetypes/task.png",
+      "name": "Taak",
+      "subtask": false
+    },
+    "resolution": null,
+    "fixVersions": [
+
+    ],
+    "customfield_12310060": "43629",
+    "resolutiondate": null,
+    "timespent": null,
+    "reporter": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/user?username=dbxwvo",
+      "name": "dbxwvo",
+      "emailAddress": "wian.vos@kvk.nl",
+      "avatarUrls": {
+        "16x16": "http://jira.k94.kvk.nl/jira/secure/useravatar?size=small&ownerId=dbxwvo&avatarId=11943",
+        "48x48": "http://jira.k94.kvk.nl/jira/secure/useravatar?ownerId=dbxwvo&avatarId=11943"
+      },
+      "displayName": "Wian Vos",
+      "active": true
+    },
+    "aggregatetimeoriginalestimate": null,
+    "updated": "2013-12-04T11:08:46.000+0100",
+    "created": "2013-12-04T11:08:46.000+0100",
+    "customfield_12310061": null,
+    "description": "testing 123",
+    "priority": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/priority/4",
+      "iconUrl": "http://jira.k94.kvk.nl/jira/images/icons/priorities/major.png",
+      "name": "2-Middel",
+      "id": "4"
+    },
+    "duedate": null,
+    "customfield_12310161": null,
+    "customfield_12310160": null,
+    "customfield_12310024": null,
+    "issuelinks": [
+
+    ],
+    "customfield_12310460": null,
+    "customfield_12310461": null,
+    "watches": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/issue/ZMM-523/watchers",
+      "watchCount": 0,
+      "isWatching": false
+    },
+    "customfield_12310462": null,
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 0,
+      "total": 0,
+      "worklogs": [
+
+      ]
+    },
+    "customfield_12310361": "0.0",
+    "subtasks": [
+
+    ],
+    "status": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/status/10004",
+      "description": "Dit is de status voor aangemaakte issues",
+      "iconUrl": "http://jira.k94.kvk.nl/jira/images/icons/statuses/generic.png",
+      "name": "Aangemaakt",
+      "id": "10004"
+    },
+    "labels": [
+
+    ],
+    "workratio": -1,
+    "assignee": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/user?username=dbxwvo",
+      "name": "dbxwvo",
+      "emailAddress": "wian.vos@kvk.nl",
+      "avatarUrls": {
+        "16x16": "http://jira.k94.kvk.nl/jira/secure/useravatar?size=small&ownerId=dbxwvo&avatarId=11943",
+        "48x48": "http://jira.k94.kvk.nl/jira/secure/useravatar?ownerId=dbxwvo&avatarId=11943"
+      },
+      "displayName": "Wian Vos",
+      "active": true
+    },
+    "attachment": [
+
+    ],
+    "aggregatetimeestimate": null,
+    "project": {
+      "self": "http://jira.k94.kvk.nl/jira/rest/api/2/project/ZMM",
+      "id": "12310970",
+      "key": "ZMM",
+      "name": "Zero Maintenance Middleware",
+      "avatarUrls": {
+        "16x16": "http://jira.k94.kvk.nl/jira/secure/projectavatar?size=small&pid=12310970&avatarId=11566",
+        "48x48": "http://jira.k94.kvk.nl/jira/secure/projectavatar?pid=12310970&avatarId=11566"
+      }
+    },
+    "versions": [
+
+    ],
+    "environment": null,
+    "timeestimate": null,
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "lastViewed": "2013-12-04T11:08:47.104+0100",
+    "components": [
+      {
+        "self": "http://jira.k94.kvk.nl/jira/rest/api/2/component/12311471",
+        "id": "12311471",
+        "name": "_Infrastructuur",
+        "description": "Mijlpaal 1"
+      }
+    ],
+    "comment": {
+      "startAt": 0,
+      "maxResults": 0,
+      "total": 0,
+      "comments": [
+
+      ]
+    },
+    "customfield_12310030": null,
+    "timeoriginalestimate": null,
+    "aggregatetimespent": null
+  }
+}

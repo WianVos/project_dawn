@@ -13,21 +13,19 @@ require 'yaml'
 # data emission Description
 
 
+class Loader < Ruote::Participant
 
-class Loader
-     include Ruote::LocalParticipant
+  def on_workitem
+    @orders = workitem
+    p @orders 
+  
+    File.open('/tmp/test1.yml', 'w') {|f| f.write @orders.to_yaml }
+    # hand the workitem back to the engine
+    reply
 
-      def on_workitem
-        @orders = workitem
-        p @orders 
-      
-        File.open('/tmp/test1.yml', 'w') {|f| f.write @orders.to_yaml }
-        # hand the workitem back to the engine
-        reply
-
-      end
-      
+  end
+  
 
 
 
-    end
+end

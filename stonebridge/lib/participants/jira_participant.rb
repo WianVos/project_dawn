@@ -12,14 +12,15 @@ require 'yaml'
 
 # data emission Description
 
-class Jira 
-    include Ruote::LocalParticipant
-      
-      def on_workitem
-         p workitem[:params]
-        # hand the workitem back to the engine
-        reply
-      end
+
+class Jira_participant < Ruote::Participant
+  
+  def on_workitem
+    p workitem
+    # hand the workitem back to the engine
+    reply
+
+  end
 
 
 
