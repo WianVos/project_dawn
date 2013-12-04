@@ -1,7 +1,9 @@
 require 'rubygems'
+
 require 'sinatra'
 require 'ruote'
 require 'yaml'
+require 'json'
 
 class Jobs < Sinatra::Base
     get '/', :provides => 'html' do
@@ -45,13 +47,17 @@ class Jobs < Sinatra::Base
     
 
     options '/order' do
-        headers['Access-Control-Allow-Origin'] = "*"
-        headers['Access-Control-Allow-Methods'] = "GET, POST, PUT, DELETE, OPTIONS"
-        headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
+       headers['Access-Control-Allow-Origin'] = "*"
+       headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+       headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
     end
 
 
     post '/order' do 
+       headers['X-XSS-Protection'] = '1;'
+       headers['Access-Control-Allow-Origin'] = "*"
+       headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+       headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
 
       #get the body good and ready
       request.body.rewind
