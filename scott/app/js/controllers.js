@@ -3,9 +3,25 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('StatusPoller', [ '$scope', '$http', '$timeout',
+    function($scope, $http, $timeout) {
+      var poller = function() {
+        $timeout(poller, 2000);
+        $http({
+          method : 'GET',
+          url : 'http://127.0.0.1:9292/jobs/status',
+        }).success(function(data, status, headers, config) {
+          delete $scope.sbunreach;
+          $scope.sbreach = "true";
+        }).error(function(data, status, headers, config) {
+          delete $scope.sbreach;
+          $scope.sbunreach = "true";
+        });
+      } 
+      poller();
+    }
+  ])
 
-  }])
   .controller('MyCtrl2', [function() {
 
   }])
