@@ -22,7 +22,7 @@ load(f) }
 require File.dirname(__FILE__) + "/lib/base.rb"
 require File.dirname(__FILE__) + "/lib/jobs.rb"
 
-map "/base" do
+map "/" do
     run Base
 end
 
@@ -34,6 +34,7 @@ end
 set :root, File.dirname(__FILE__)
 set :bind, 'localhost'
 set :port, 9292
+set :view, 'views'
 
 # start a ruote dashboard/worker/storage combo
 RuoteEngine = Ruote::Dashboard.new(
@@ -52,6 +53,7 @@ RuoteEngine.register /^loader_/, Loader
 RuoteEngine.register /^jira_*/, Jira_participant
 RuoteEngine.register /^supervisor_*/, Supervisor
 RuoteEngine.register /sleeper/, Sleeper
+RuoteEngine.register /reporter/, Reporter
 
 
 use Rack::CommonLogger

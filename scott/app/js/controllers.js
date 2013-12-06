@@ -9,7 +9,7 @@ angular.module('myApp.controllers', []).
         $timeout(poller, 2000);
         $http({
           method : 'GET',
-          url : 'http://127.0.0.1:9292/jobs/status',
+          url : 'http://127.0.0.1:9292/status',
         }).success(function(data, status, headers, config) {
           delete $scope.sbunreach;
           $scope.sbreach = "true";

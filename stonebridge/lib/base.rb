@@ -12,4 +12,12 @@ class Base < Sinatra::Base
             Sebastiaan van Steenis
             Wian Vos"
     end
+    
+    get '/status' do
+       headers['X-XSS-Protection'] = '1;'
+       headers['Access-Control-Allow-Origin'] = "*" 
+       headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+       headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
+    end
+
 end

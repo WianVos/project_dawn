@@ -6,6 +6,7 @@ require 'uri'
 module Stonebridge
   class Jira
 
+
     def initialize
       config_path = "etc/jira"
       config_filename = File.join(config_path, "jira.yaml")
