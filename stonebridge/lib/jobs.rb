@@ -5,6 +5,7 @@ require 'ruote'
 require 'yaml'
 require 'json'
 
+
 class Jobs < Sinatra::Base
     get '/', :provides => 'html' do
         p  RuoteEngine.processes
@@ -69,12 +70,16 @@ class Jobs < Sinatra::Base
        template_path = "etc/templates"
        template_filename = File.join(template_path, "#{order_hash['applicatieserver']}-#{order_hash['template']}.yaml")
        template = YAML::load(File.open(template_filename))
-      
+       
+       application = order_hash['applicatienaam']
+       action = order_hash['action']
         # add the template to the order_hash
-       order_hash['items'] = template
+       order_hash['items']  = template
 
-       # compose the process
-        plugins = ["aws", "puppet","reporter"]
+      
+       ## compose the process
+       # what plugins do we need to add
+       plugins = ["jira"]
 
        # define the process
        pdef = Ruote.process_definition do
@@ -85,20 +90,45 @@ class Jobs < Sinatra::Base
           # bootstrap the workitem
           participant :ref => "loader_general"
 
+          # everything else should be concurrent
           concurrence :merge_type => :concat do
+           # loop trough the order_hash and setup a sub-process per instance
+            order_hash['items'].each  do | type, types_hash| 
+              types_hash.each  do |instance, values| 
+                subprocess "#{type}-#{instance}"
+              end # instance loop
+            end # end items
+          end # end concurrency
+        end #sequence
+            # loop through  the items again and setup the sub-processes with on participant per plugin
+        order_hash['items'].each do  | type, types_hash|  
+           types_hash.each_key do |instance|
+             define "#{type}-#{instance}" do
+               sequence :tag => 'create_stage' do 
+                 plugins.each do |plugin|
+                   participant :ref => "#{plugin}_#{type}-#{instance}", :item => "#{type}-#{instance}", :application =>  "#{application}", :task => 'create', :type => "#{type}"
+                 end #plugins
+               end # sequence
+                
+                  cursor :tag => 'check_stage' do
+                  plugins.each do |plugin|
+                   participant :ref => "#{plugin}_#{type}-#{instance}", :item => "#{type}-#{instance}", :application =>  "#{application}", :task => 'check', :type => "#{type}"
+                   end #plugins
+                   participant :ref => "sleeper", :sleep => '10'
+                   participant :ref => "supervisor_#{type}-#{instance}", :item => "#{type}-#{instance}", :plugins => plugins 
+                   
+                 end # cursor
+            
+             end # define
+           end # loop over types_hash
+         end # loop over items
+          
+      end # process definition
 
-            order_hash['items'].each{|t,  d| 
-                d.each_key {|i| participant :ref => "jira_#{t}_#{i}", :task => "#{t}" }}
-
-
-          end
-        end
-     end
-
+   
      wfid = RuoteEngine.launch(
         pdef,
         'orders' => order_hash )  
-     RuoteEngine.wait_for(wfid,:timeout => 6)
      p wfid
   end
 end

@@ -3,15 +3,23 @@ GEM
   specs:
     atomic (1.1.14)
     blankslate (2.1.2.4)
+    data_magic (0.16.1)
+      faker (>= 1.1.2)
+      yml_reader (>= 0.2)
+    faker (1.2.0)
+      i18n (~> 0.5)
     file-tail (1.0.12)
       tins (~> 0.5)
     haml (4.0.4)
       tilt
     httpclient (2.3.4.1)
+    i18n (0.6.9)
     jira4r (1.2.0)
       soap2r
-    json_pure (1.8.1)
+    json (1.8.1)
     mime-types (1.25)
+    page_navigation (0.9)
+      data_magic (>= 0.14)
     parslet (1.5.0)
       blankslate (~> 2.0)
     rack (1.5.2)
@@ -24,6 +32,8 @@ GEM
       sexp_processor (~> 4.0)
     ruby_parser (3.2.2)
       sexp_processor (~> 4.1)
+    rufus (0.7)
+      page_navigation (>= 0.7)
     rufus-cloche (1.0.4)
       rufus-json (>= 1.0.3)
     rufus-dollar (1.0.4)
@@ -69,16 +79,18 @@ GEM
     tins (0.13.1)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
+    yml_reader (0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jira4r
-  json_pure
+  json
   rack
   rest-client
   ruby2ruby (= 2.0.2)
+  rufus
   ruote
   ruote-kit
   sinatra

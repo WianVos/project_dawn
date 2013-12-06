@@ -16,10 +16,21 @@ require 'yaml'
 class Loader < Ruote::Participant
 
   def on_workitem
-    @orders = workitem
-    p @orders 
-  
-    File.open('/tmp/test1.yml', 'w') {|f| f.write @orders.to_yaml }
+
+    @orders = workitem.fields['orders']
+    # load the application stuff from the yaml
+
+   
+    # loop trough the order_hash and create the needed entry's in the workitem
+    @orders['items'].each_key do | type |
+        @orders['items'] [type].each do | instance , settings |
+            workitem.fields["#{type}-#{instance}"] = {}
+            workitem.fields["#{type}-#{instance}"]['settings'] = settings
+            workitem.fields["#{type}-#{instance}"]['info'] = {'action' => "#{@orders['action']}" }
+            workitem.fields["#{type}-#{instance}-done"] = false
+         end
+     end
+
     # hand the workitem back to the engine
     reply
 

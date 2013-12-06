@@ -1,4 +1,6 @@
 #require the goodies we need
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '/lib')
+puts $LOAD_PATH
 require 'rubygems'
 require 'sinatra'
 require 'rufus-json/automatic'
@@ -7,6 +9,8 @@ require 'ruote/storage/fs_storage'
 require 'net/http'
 require 'fileutils'
 require 'yaml'
+require 'Stonebridge.rb'
+
 
 # include default participants
 #require participants
@@ -46,7 +50,8 @@ RuoteEngine.noisy =  'true'
 # Mapping participant names to participant classes. These classes must be present in ../lib for now.
 RuoteEngine.register /^loader_/, Loader
 RuoteEngine.register /^jira_*/, Jira_participant
-
+RuoteEngine.register /^supervisor_*/, Supervisor
+RuoteEngine.register /sleeper/, Sleeper
 
 
 use Rack::CommonLogger

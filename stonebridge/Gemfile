@@ -4,6 +4,7 @@ ruby "1.9.3"
 
 gem 'ruote'
 gem 'ruote-kit'
+gem 'rufus'
 gem 'ruby2ruby' , '2.0.2'
 gem 'sinatra'
 gem 'rack'
