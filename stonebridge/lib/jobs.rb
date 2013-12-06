@@ -46,8 +46,6 @@ class Jobs < Sinatra::Base
        content_type :json
        process = RuoteEngine.process(params[:jobid])
        p process.original_tree().to_json
-
-
     end
 
     get '/template/:template_name', :provides => 'yaml' do
