@@ -16,6 +16,13 @@ class Jobs < Sinatra::Base
 
     end
     
+    get '/status' do
+       headers['X-XSS-Protection'] = '1;'
+       headers['Access-Control-Allow-Origin'] = "*" 
+       headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+       headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
+    end
+
     get '/testjob' do
         pdef = Ruote.define do
             jira

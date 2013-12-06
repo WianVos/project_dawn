@@ -1,0 +1,60 @@
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Omgeving aanvragen</h1>
+        <p class="lead">Gebruik het onderstaande formulier om een omgeving aan te vragen.</p>
+        <div ng-controller="Aanvragen">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Applicatienaam</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" ng-model="aanvraag.applicatienaam" id="applicatienaam" placeholder="Applicatienaam">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="selectTemplate" class="col-sm-2 control-label">Applicatieserver</label>
+              <div class="col-sm-10">
+          <select class="form-control" ng-model="aanvraag.applicatieserver" id="applicatieserver">
+            <option>jetty</option>
+            <option>websphere</option>
+          </select>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="selectTemplate" class="col-sm-2 control-label">Template</label>
+              <div class="col-sm-10">
+                <select class="form-control" ng-model="aanvraag.template" id="template">
+                  <option>xsmall</option>
+                  <option>small</option>
+                  <option>medium</option>
+                  <option>large</option>
+                  <option>xlarge</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="selectTemplate" class="col-sm-2 control-label">Omgeving</label>
+              <div class="col-sm-10">
+                <select class="form-control" ng-model="aanvraag.omgeving" id="omgeving">
+                  <option>dev</option>
+                  <option>tst</option>
+                  <option>acp</option>
+                  <option>prd</option>
+                  <option>edu</option>
+                  <option>fun</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" ng-click="submitaanvraag()" class="btn btn-default">Verstuur</button>
+              </div>
+            </div>
+        <div class="alert alert-success" id="data" ng-show="data"><strong>Verzoek ontvangen!</strong><br />Je verzoek is geregistreerd onder <a href="#" class="alert-link">{{ data }}</a></div>
+          </form>
+<pre>form = {{aanvraag | json}}</pre>
+        </div> 
+      </div>
+
+
+    </div><!-- /.container -->
