@@ -33,6 +33,19 @@
               </div>
             </div>
             <div class="form-group">
+              <label for="selectTemplate" class="col-sm-2 control-label">Omgeving</label>
+              <div class="col-sm-10">
+                <select class="form-control" ng-model="aanvraag.omgeving" id="omgeving">
+                  <option>dev</option>
+                  <option>tst</option>
+                  <option>acp</option>
+                  <option>prd</option>
+                  <option>edu</option>
+                  <option>fun</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" ng-click="submitaanvraag()" class="btn btn-default">Verstuur</button>
               </div>
