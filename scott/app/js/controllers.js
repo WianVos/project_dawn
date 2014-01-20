@@ -42,4 +42,18 @@ angular.module('myApp.controllers', []).
         });
       }
     }
+  ])
+  .controller('Hiera', [ '$scope', '$http',
+    function($scope, $http) {
+      $scope.getitems = function() {
+        $http({
+          method : 'GET',
+          url : 'http://se94alm015.k94.kvk.nl:8082/query/puppet/hiera',
+        }).success(function(data, status, headers, config) {
+          $scope.data = data;
+        }).error(function(data, status, headers, config) {
+          $scope.data = headers;
+        });
+      }
+    }
   ]);

@@ -1,0 +1,19 @@
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Hiera</h1>
+        <p class="lead"></p>
+        <div ng-controller="Hiera">
+          <form class="form-horizontal" role="form">
+                <button type="submit" ng-click="getitems()" class="btn btn-default">Show me the money</button>
+                Search: <input ng-model="searchText">
+          </form>
+          <table class="table table-striped">
+          <th><td>Source</td><td>Key</td><td>Value</td></th>
+          <tr ng-repeat="item in data | filter:searchText"><td></td><td>{{item.source}}</td><td>{{item.key}}</td><td>{{item.value | json}}</td></tr>
+          </table>
+        </div> 
+      </div>
+
+
+    </div><!-- /.container -->
