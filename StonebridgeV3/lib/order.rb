@@ -8,7 +8,6 @@ class Order
   # it should contain
   def initialize(order_hash)
 
-     p order_hash
 
 
      @action = order_hash['action']
@@ -177,7 +176,6 @@ class Order
           plugin_step_list[stage] = [] unless plugin_step_list.has_key?(stage)
           plugin_step_list[stage] << plugin }
     }
-    p plugin_step_list
   end
 
 

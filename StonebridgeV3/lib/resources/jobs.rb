@@ -3,8 +3,19 @@ require 'wfengine'
 class Application
 
   namespace '/jobs' do
+
   get '' do
     json WfEngine.processes
+  end
+
+  get '/status' do
+    jobs = WfEngine.processes
+    @job_status = {}
+    jobs.each { |wfid|
+      status_file = File.join(configatron.plugins.reporter.reportsdir, "#{wfid}.yaml")
+      @job_status[wfid] = YAML::load(File.open(status_file)) if File.exists?  status_file
+    }
+    json @job_status
   end
 
   get '/:jobid' do
@@ -55,12 +66,15 @@ class Application
 
   end
 
+
+
   get '/status/:jobid' do
     status = "jobid not recognized"
     status_file = File.join(configatron.plugins.reporter.reportsdir, "#{params[:jobid]}.yaml")
     status = YAML::load(File.open(status_file)) if File.exists?  status_file
     json status
   end
+
 
  end
 end
