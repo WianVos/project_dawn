@@ -1,0 +1,7 @@
+---
+db2:
+  db2_1:
+    name: db2_1
+    <% if @db2_comment %>
+    comment: <%= @db2_comment %>
+    <% end %>

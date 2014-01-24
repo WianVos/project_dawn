@@ -8,21 +8,49 @@ class Order
   # it should contain
   def initialize(order_hash)
 
-     @action = action
-     @application = applicatienaam
-     @type = applicatieserver
-     @template_name = template
-     @environment = omgeving
-     @template_hash = Template.new.get_template("#{@type}-#{@template_name}")
+     p order_hash
+
+
+     @action = order_hash['action']
+     @application = order_hash['applicatienaam']
+     @environment = order_hash['environment']
+
+     @type = order_hash['applicatieserver']
+     @template = order_hash['template']
+
+     @middleware_settings = order_hash['middleware']
+
+     @environment = order_hash['omgeving']
+
      # compose the order hash. This will get passed to the process later on
      @order_hash = {
          'application' => @application,
          'environment' => @environment,
-         'items'       => @template_hash,
+         'items'       => get_order_template(order_hash)
         }
 
      @pdef = get_ruote_pdef
 
+
+  end
+
+  def get_order_template(order_hash)
+
+    # let's fiddle with composed templates
+    @templateEngine = Template.new(order_hash)
+
+    template_hash = @templateEngine.get_template("#{@type}-#{@template}")
+    order_hash['middleware'].each do |type, settings|
+      if settings['include'] == true
+        if settings.has_key?('template')
+          template_hash.merge!(@templateEngine.get_template("#{type}-#{settings['template']}"))
+        else
+          template_hash.merge!(@templateEngine.get_template(type))
+        end
+      end
+    end
+
+    return template_hash
   end
 
   def get_plugin_stages(plugin)
@@ -54,8 +82,8 @@ class Order
 
 
   def run_proccess
-    WfEngine.submit_order(@pdef, @order_hash)
-
+    wfid = WfEngine.submit_order(@pdef, @order_hash)
+    return wfid
   end
 
 

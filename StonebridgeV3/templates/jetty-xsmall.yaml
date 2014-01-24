@@ -6,9 +6,5 @@ jetty:
     deployit: true
   jetty2:
     cpu: '1'
-mq:
-  queue1:
-    name: tst1
-db: 
-  db1:
-    name: tdb1
+
+

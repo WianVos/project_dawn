@@ -17,6 +17,8 @@ class Application
     json WfEngine.process_status(params[:jobid])
   end
 
+
+
   delete '/:jobid' do
     json WfEngine.cancel_process(:jobid)
   end
@@ -48,7 +50,7 @@ class Application
 
     order = Order.new(order_hash)
 
-    #order.run_proccess
+    json order.run_proccess
 
 
   end

@@ -7,7 +7,7 @@ class Jira < Plugin
    @stages = ['create', 'check']
    @order = "60"
    @participant_matcher = 'Jira'
-   @items = ['jetty', 'mq', 'db']
+   @items = ['jetty', 'mq', 'db2', 'il']
 
    def initialize
      @done_status_string = "Opgelost"

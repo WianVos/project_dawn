@@ -1,0 +1,7 @@
+---
+mq:
+  mq_queue1:
+    name: mq_queue1
+    <% if @mq_comment %>
+    comment: <%= @mq_comment %>
+    <% end %>

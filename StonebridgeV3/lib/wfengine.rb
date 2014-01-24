@@ -40,6 +40,7 @@ class WfEngine
      pdef,
      'orders' => hash
     )
+    return wfid
   end
 
   # get the processes in the active engine
