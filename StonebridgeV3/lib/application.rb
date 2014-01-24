@@ -18,7 +18,7 @@ autoload :WfEngine, "wfengine.rb"
 
 
 class Application < Sinatra::Application
-
+  set :protection, :except => [:json_csrf]
 
 
 
