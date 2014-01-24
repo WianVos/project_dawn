@@ -27,7 +27,7 @@ angular.module('myApp.controllers', []).
   }])
   .controller('Aanvragen', [ '$scope', '$http',
     function($scope, $http) {
-      $scope.aanvraag = { 'action':'create', 'includedb2':'false', 'includemq':'false', 'includeil':'false' };
+      $scope.aanvraag = { 'action':'create', 'db2' : { 'include':'false'}, 'mq': { 'include':'false'}, 'il': { 'include':'false' } };
       $scope.submitaanvraag = function() {
         $http({
           method : 'POST',
