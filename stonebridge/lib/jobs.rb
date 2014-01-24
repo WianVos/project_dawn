@@ -135,7 +135,7 @@ class Jobs < Sinatra::Base
                    participant :ref => "reporter", :item => "#{type}-#{instance}"
                    participant :ref => "sleeper", :sleep => '10'
                    participant :ref => "supervisor_#{type}-#{instance}", :item => "#{type}-#{instance}", :plugins => plugins 
-                   
+         sub
                  end # cursor
             
              end # define
@@ -144,7 +144,8 @@ class Jobs < Sinatra::Base
           
       end # process definition
 
-   
+     pdef.to_json
+
      wfid = RuoteEngine.launch(
         pdef,
         'orders' => order_hash )  
