@@ -27,14 +27,13 @@ angular.module('myApp.controllers', []).
   }])
   .controller('Aanvragen', [ '$scope', '$http',
     function($scope, $http) {
-      // $scope.aanvraag = { 'action':'create', 'includedb2':'false', 'includemq':'false', 'includeil':'false' };
-      $scope.aanvraag = { 'action':'create' };
+      $scope.aanvraag = { 'action':'create', 'includedb2':'false', 'includemq':'false', 'includeil':'false' };
       $scope.submitaanvraag = function() {
         $http({
           method : 'POST',
           url : 'http://127.0.0.1:9292/jobs/order',
           data : $scope.aanvraag
-          // headers : {'Content-Type': 'application/json'}
+          headers : {'Content-Type': 'application/json'}
         }).success(function(data, status, headers, config) {
           $scope.data = data;
         }).error(function(data, status, headers, config) {
