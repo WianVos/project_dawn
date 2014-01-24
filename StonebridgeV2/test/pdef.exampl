@@ -1,0 +1,80 @@
+define
+{}
+sequence
+{}
+participant
+{"ref"=>"loader_general"}
+concurrence
+{"merge_type"=>"concat"}
+subprocess
+{"jetty-jetty1"=>nil}
+subprocess
+{"jetty-jetty2"=>nil}
+subprocess
+{"mq-queue1"=>nil}
+subprocess
+{"db-db1"=>nil}
+define
+{"jetty-jetty1"=>nil}
+sequence
+{"tag"=>"create_stage"}
+participant
+{"ref"=>"jira_jetty-jetty1", "item"=>"jetty-jetty1", "application"=>"test1", "task"=>"create", "type"=>"jetty"}
+cursor
+{"tag"=>"check_stage"}
+participant
+{"ref"=>"jira_jetty-jetty1", "item"=>"jetty-jetty1", "application"=>"test1", "task"=>"check", "type"=>"jetty"}
+participant
+{"ref"=>"reporter", "item"=>"jetty-jetty1"}
+participant
+{"ref"=>"sleeper", "sleep"=>"10"}
+participant
+{"ref"=>"supervisor_jetty-jetty1", "item"=>"jetty-jetty1", "plugins"=>["jira"]}
+define
+{"jetty-jetty2"=>nil}
+sequence
+{"tag"=>"create_stage"}
+participant
+{"ref"=>"jira_jetty-jetty2", "item"=>"jetty-jetty2", "application"=>"test1", "task"=>"create", "type"=>"jetty"}
+cursor
+{"tag"=>"check_stage"}
+participant
+{"ref"=>"jira_jetty-jetty2", "item"=>"jetty-jetty2", "application"=>"test1", "task"=>"check", "type"=>"jetty"}
+participant
+{"ref"=>"reporter", "item"=>"jetty-jetty2"}
+participant
+{"ref"=>"sleeper", "sleep"=>"10"}
+participant
+{"ref"=>"supervisor_jetty-jetty2", "item"=>"jetty-jetty2", "plugins"=>["jira"]}
+define
+{"mq-queue1"=>nil}
+sequence
+{"tag"=>"create_stage"}
+participant
+{"ref"=>"jira_mq-queue1", "item"=>"mq-queue1", "application"=>"test1", "task"=>"create", "type"=>"mq"}
+cursor
+{"tag"=>"check_stage"}
+participant
+{"ref"=>"jira_mq-queue1", "item"=>"mq-queue1", "application"=>"test1", "task"=>"check", "type"=>"mq"}
+participant
+{"ref"=>"reporter", "item"=>"mq-queue1"}
+participant
+{"ref"=>"sleeper", "sleep"=>"10"}
+participant
+{"ref"=>"supervisor_mq-queue1", "item"=>"mq-queue1", "plugins"=>["jira"]}
+define
+{"db-db1"=>nil}
+sequence
+{"tag"=>"create_stage"}
+participant
+{"ref"=>"jira_db-db1", "item"=>"db-db1", "application"=>"test1", "task"=>"create", "type"=>"db"}
+cursor
+{"tag"=>"check_stage"}
+participant
+{"ref"=>"jira_db-db1", "item"=>"db-db1", "application"=>"test1", "task"=>"check", "type"=>"db"}
+participant
+{"ref"=>"reporter", "item"=>"db-db1"}
+participant
+{"ref"=>"sleeper", "sleep"=>"10"}
+participant
+{"ref"=>"supervisor_db-db1", "item"=>"db-db1", "plugins"=>["jira"]}

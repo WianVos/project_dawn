@@ -1,0 +1,15 @@
+---
+  plugindir: "plugins"
+  templatesdir: "templates"
+  plugins:
+    jira:
+     url: 'http://jira.k94.kvk.nl/jira/rest/api/latest'
+     username: 'dbkrtpzmm'
+     password: 'kvk9kvk4'
+     project: 'ZMM'
+    reporter:
+     reportsdir: '/var/tmp/stonebridge'
+  logging:
+    loglevel: 'debug'
+    logfile: '/tmp/stonebridge.log'
+

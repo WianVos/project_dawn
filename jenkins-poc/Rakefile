@@ -1,0 +1,26 @@
+require 'rake'
+require 'rake/tasklib'
+require 'find'
+require 'fileutils'
+
+desc 'create a new jenkins job for a repo based on the provided skelleton'
+
+task :create_jenkins_job, :module do |t, args|
+  module_name = args[:module] 
+  
+  jenkins_cli = './jenkins-cli.jar'
+  jenkins_host = 'se94alm007.k94.kvk.nl:8080/zmm'
+  template_file = './template.txt'
+  output_file = "/tmp/#{module_name}.jenkins.txt"
+  # Then set the variables for find/replace
+  original_string_or_regex = /replace/
+  replacement_string = module_name
+
+  text = File.read(template_file)
+  puts text
+  replace = text.gsub(original_string_or_regex, replacement_string)
+  File.open(output_file, "w") { |file| file.puts replace }
+  puts "adding jenkins job for #{module_name} "
+  jenkins_cli_command = "java -jar #{jenkins_cli} -s http://#{jenkins_host} create-job \'Puppet-kvk-#{module_name}\' < #{output_file} "
+  cmd = `#{jenkins_cli_command}` 
+end

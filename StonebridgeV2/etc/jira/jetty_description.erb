@@ -1,0 +1,14 @@
+'create a jetty host for application <%= @application %> in stage <%= @omgeving %> 
+<% if !@cpu.nil?  %> It should have <%= @cpu %> cpu's <%end%>
+<% if !@memory.nil?  %> It should have <%= @memory %> mb's of memory <% end %>
+<% if !@deployit.nil?   %>  
+    <% if @deployit == true %> It should be enabled in deployit 
+    this means that the hosts and containers should be created and added in the environment
+    Dont forget that you can use the rake jobs created for this purpose .. should save you a lot of time
+    rake dpl_add_env       # add a deployit environment for ZMM
+    rake dpl_add_host      # add a host to deployit
+    rake dpl_add_jetty     # add a jetty server to deployit
+    rake dpl_copy_dict     # copy a deployit dictionary to a new stage
+    <% end %>
+<%end%>
+'

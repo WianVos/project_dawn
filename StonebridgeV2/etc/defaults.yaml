@@ -1,0 +1,3 @@
+---
+ plugindir: plugins
+ template_path: 'etc/templates'

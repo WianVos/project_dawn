@@ -1,0 +1,1 @@
+{"type":"configurations","_id":"participant_list","list":[["loader",["Reporter",{}]],["^loader_",["Loader",{}]],["^jira_*",["Jira",{}]],["Jira",["Jira",{}]],["Loader",["Loader",{}]],["Sleeper",["Sleeper",{}]],["supervisor",["Supervisor",{}]],["reporter",["Reporter",{}]]],"put_at":"2014-01-23 07:09:14.558234 UTC","_rev":511}

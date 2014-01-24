@@ -1,0 +1,97 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    atomic (1.1.14)
+    backports (3.4.0)
+    blankslate (2.1.2.4)
+    data_magic (0.16.1)
+      faker (>= 1.1.2)
+      yml_reader (>= 0.2)
+    faker (1.2.0)
+      i18n (~> 0.5)
+    file-tail (1.0.12)
+      tins (~> 0.5)
+    httpclient (2.3.4.1)
+    i18n (0.6.9)
+    jira4r (1.2.0)
+      soap2r
+    json (1.8.1)
+    mime-types (2.0)
+    multi_json (1.8.4)
+    page_navigation (0.9)
+      data_magic (>= 0.14)
+    parslet (1.5.0)
+      blankslate (~> 2.0)
+    rack (1.5.2)
+    rack-protection (1.5.2)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby2ruby (2.0.2)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.0)
+    ruby_parser (3.3.0)
+      sexp_processor (~> 4.1)
+    rufus (0.8.2)
+      page_navigation (>= 0.7)
+    rufus-cloche (1.0.4)
+      rufus-json (>= 1.0.3)
+    rufus-dollar (1.0.4)
+    rufus-json (1.0.6)
+    rufus-mnemo (1.2.3)
+    rufus-scheduler (3.0.4)
+      tzinfo
+    rufus-treechecker (1.0.8)
+      ruby_parser (>= 2.0.5)
+    ruote (2.3.0.1)
+      blankslate (= 2.1.2.4)
+      parslet (>= 1.4.0)
+      rufus-cloche (>= 1.0.2)
+      rufus-dollar (>= 1.0.4)
+      rufus-json (>= 1.0.1)
+      rufus-mnemo (>= 1.2.2)
+      rufus-scheduler (>= 2.0.16)
+      rufus-treechecker (>= 1.0.8)
+      sourcify (= 0.5.0)
+    sexp_processor (4.4.1)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-contrib (1.4.2)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (~> 1.3)
+    soap2r (1.5.8)
+      httpclient (>= 2.1.1)
+    sourcify (0.5.0)
+      file-tail (>= 1.0.5)
+      ruby2ruby (>= 1.2.5)
+      ruby_parser (>= 2.0.5)
+      sexp_processor (>= 3.0.5)
+    thread_safe (0.1.3)
+      atomic
+    tilt (1.4.1)
+    tins (0.13.1)
+    tzinfo (1.1.0)
+      thread_safe (~> 0.1)
+    yml_reader (0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jira4r
+  json
+  rack
+  rest-client
+  ruby2ruby (= 2.0.2)
+  rufus
+  ruote
+  sinatra
+  sinatra-contrib

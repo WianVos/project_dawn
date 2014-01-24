@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+ruby "1.9.3"
+
+gem 'ruote'
+gem 'rufus'
+gem 'ruby2ruby' , '2.0.2'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'rack'
+gem 'jira4r'
+gem 'rest-client'
+gem 'json'

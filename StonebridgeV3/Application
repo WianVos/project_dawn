@@ -1,0 +1,286 @@
+D, [2014-01-23T10:19:05.048330 #27346] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:19:05.048463 #27346] DEBUG : Configuration loaded
+D, [2014-01-23T10:20:09.996862 #27580] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:20:09.997001 #27580] DEBUG : Configuration loaded
+D, [2014-01-23T10:21:14.815533 #27804] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:21:14.815678 #27804] DEBUG : Configuration loaded
+D, [2014-01-23T10:21:34.028259 #27892] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:21:34.028384 #27892] DEBUG : Configuration loaded
+D, [2014-01-23T10:27:20.703962 #29029] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:27:20.704104 #29029] DEBUG : Configuration loaded
+D, [2014-01-23T10:28:17.313675 #29245] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:28:17.313815 #29245] DEBUG : Configuration loaded
+D, [2014-01-23T10:28:27.083221 #29312] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:28:27.083362 #29312] DEBUG : Configuration loaded
+D, [2014-01-23T10:28:44.446333 #29363] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:28:44.446498 #29363] DEBUG : Configuration loaded
+D, [2014-01-23T10:35:15.743261 #30630] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:35:15.743437 #30630] DEBUG : Configuration loaded
+D, [2014-01-23T10:35:39.471858 #30683] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:35:39.471997 #30683] DEBUG : Configuration loaded
+D, [2014-01-23T10:35:53.018386 #30763] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:35:53.018525 #30763] DEBUG : Configuration loaded
+D, [2014-01-23T10:36:36.144216 #30929] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:36:36.144343 #30929] DEBUG : Configuration loaded
+D, [2014-01-23T10:36:51.212229 #31016] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:36:51.212374 #31016] DEBUG : Configuration loaded
+D, [2014-01-23T10:40:10.878419 #31693] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:40:10.878554 #31693] DEBUG : Configuration loaded
+D, [2014-01-23T10:42:21.542454 #32363] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:42:21.542568 #32363] DEBUG : Configuration loaded
+D, [2014-01-23T10:42:53.623692 #32481] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:42:53.623806 #32481] DEBUG : Configuration loaded
+D, [2014-01-23T10:44:26.439052 #332] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:44:26.439167 #332] DEBUG : Configuration loaded
+D, [2014-01-23T10:44:41.834227 #384] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:44:41.834338 #384] DEBUG : Configuration loaded
+D, [2014-01-23T10:46:28.041385 #447] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:46:28.041495 #447] DEBUG : Configuration loaded
+D, [2014-01-23T10:46:40.322557 #488] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:46:40.322671 #488] DEBUG : Configuration loaded
+D, [2014-01-23T10:46:52.265166 #536] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:46:52.265296 #536] DEBUG : Configuration loaded
+D, [2014-01-23T10:47:15.344909 #615] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:47:15.345023 #615] DEBUG : Configuration loaded
+D, [2014-01-23T10:47:34.363200 #693] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:47:34.363314 #693] DEBUG : Configuration loaded
+D, [2014-01-23T10:54:25.820469 #1815] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:54:25.820540 #1815] DEBUG : Configuration loaded
+D, [2014-01-23T10:56:21.775150 #1913] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:56:21.775239 #1913] DEBUG : Configuration loaded
+D, [2014-01-23T10:56:57.530429 #2136] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:56:57.530504 #2136] DEBUG : Configuration loaded
+D, [2014-01-23T10:57:39.450917 #2350] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:57:39.450995 #2350] DEBUG : Configuration loaded
+D, [2014-01-23T10:58:33.484214 #2413] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:58:33.484285 #2413] DEBUG : Configuration loaded
+D, [2014-01-23T10:59:52.964511 #2483] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T10:59:52.964597 #2483] DEBUG : Configuration loaded
+D, [2014-01-23T11:00:31.468293 #2543] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:00:31.468364 #2543] DEBUG : Configuration loaded
+D, [2014-01-23T11:01:00.552965 #2675] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:01:00.553037 #2675] DEBUG : Configuration loaded
+D, [2014-01-23T11:02:19.462008 #2961] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:02:19.462079 #2961] DEBUG : Configuration loaded
+D, [2014-01-23T11:03:25.758888 #3211] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:03:25.758964 #3211] DEBUG : Configuration loaded
+D, [2014-01-23T11:04:39.812142 #3462] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:04:39.812221 #3462] DEBUG : Configuration loaded
+D, [2014-01-23T11:07:14.893578 #3984] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:07:14.893649 #3984] DEBUG : Configuration loaded
+D, [2014-01-23T11:10:56.117910 #5056] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:10:56.117977 #5056] DEBUG : Configuration loaded
+D, [2014-01-23T11:13:39.219373 #5262] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:13:39.219444 #5262] DEBUG : Configuration loaded
+D, [2014-01-23T11:15:22.377433 #5596] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:15:22.377508 #5596] DEBUG : Configuration loaded
+D, [2014-01-23T11:15:58.050648 #5731] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:15:58.050714 #5731] DEBUG : Configuration loaded
+D, [2014-01-23T11:16:45.420239 #5792] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:16:45.420310 #5792] DEBUG : Configuration loaded
+D, [2014-01-23T11:17:47.011422 #5868] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:17:47.011500 #5868] DEBUG : Configuration loaded
+D, [2014-01-23T11:18:33.983504 #5923] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:18:33.983594 #5923] DEBUG : Configuration loaded
+D, [2014-01-23T11:22:21.223073 #6495] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:22:21.223144 #6495] DEBUG : Configuration loaded
+D, [2014-01-23T11:24:19.541673 #6574] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:24:19.541753 #6574] DEBUG : Configuration loaded
+D, [2014-01-23T11:24:58.590265 #6621] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:24:58.590339 #6621] DEBUG : Configuration loaded
+D, [2014-01-23T11:25:15.208887 #6658] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:25:15.208957 #6658] DEBUG : Configuration loaded
+D, [2014-01-23T11:26:49.904116 #6711] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:26:49.904184 #6711] DEBUG : Configuration loaded
+D, [2014-01-23T11:27:41.324222 #6756] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:27:41.324285 #6756] DEBUG : Configuration loaded
+D, [2014-01-23T11:29:23.518871 #7088] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:29:23.518950 #7088] DEBUG : Configuration loaded
+D, [2014-01-23T11:34:41.371534 #8136] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:34:41.371623 #8136] DEBUG : Configuration loaded
+D, [2014-01-23T11:40:54.789998 #8845] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:40:54.790069 #8845] DEBUG : Configuration loaded
+D, [2014-01-23T11:41:34.120589 #8972] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:41:34.120666 #8972] DEBUG : Configuration loaded
+D, [2014-01-23T11:43:05.195654 #9219] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:43:05.195741 #9219] DEBUG : Configuration loaded
+D, [2014-01-23T11:46:33.889998 #9700] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:46:33.890078 #9700] DEBUG : Configuration loaded
+D, [2014-01-23T11:47:19.621003 #9763] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:47:19.621069 #9763] DEBUG : Configuration loaded
+D, [2014-01-23T11:51:07.441934 #10441] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:51:07.442000 #10441] DEBUG : Configuration loaded
+D, [2014-01-23T11:52:35.065890 #10702] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:52:35.065968 #10702] DEBUG : Configuration loaded
+D, [2014-01-23T11:56:34.733002 #11441] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T11:56:34.733066 #11441] DEBUG : Configuration loaded
+D, [2014-01-23T12:23:34.779592 #16433] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T12:23:34.779662 #16433] DEBUG : Configuration loaded
+D, [2014-01-23T12:24:29.613620 #16565] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T12:24:29.613697 #16565] DEBUG : Configuration loaded
+D, [2014-01-23T12:25:34.666528 #16694] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T12:25:34.666594 #16694] DEBUG : Configuration loaded
+D, [2014-01-23T12:28:17.862488 #16972] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T12:28:17.862561 #16972] DEBUG : Configuration loaded
+D, [2014-01-23T12:29:00.072999 #17025] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T12:29:00.073081 #17025] DEBUG : Configuration loaded
+D, [2014-01-23T13:04:54.158816 #23790] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T13:04:54.158892 #23790] DEBUG : Configuration loaded
+D, [2014-01-23T14:36:05.737600 #8568] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:36:05.737670 #8568] DEBUG : Configuration loaded
+D, [2014-01-23T14:38:17.339152 #8937] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:38:17.339232 #8937] DEBUG : Configuration loaded
+D, [2014-01-23T14:46:20.134367 #10089] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:46:20.134437 #10089] DEBUG : Configuration loaded
+D, [2014-01-23T14:47:30.670537 #10297] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:47:30.670609 #10297] DEBUG : Configuration loaded
+D, [2014-01-23T14:48:36.633529 #10491] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:48:36.633615 #10491] DEBUG : Configuration loaded
+D, [2014-01-23T14:50:17.070868 #10795] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:50:17.070939 #10795] DEBUG : Configuration loaded
+D, [2014-01-23T14:53:21.050627 #11319] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:53:21.050714 #11319] DEBUG : Configuration loaded
+D, [2014-01-23T14:57:23.113268 #11866] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T14:57:23.113345 #11866] DEBUG : Configuration loaded
+D, [2014-01-23T15:11:45.277013 #14717] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:11:45.278533 #14717] DEBUG : Configuration loaded
+D, [2014-01-23T15:15:29.803234 #15638] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:15:29.803322 #15638] DEBUG : Configuration loaded
+D, [2014-01-23T15:16:53.310445 #15694] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:16:53.310526 #15694] DEBUG : Configuration loaded
+D, [2014-01-23T15:17:51.182161 #15744] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:17:51.182240 #15744] DEBUG : Configuration loaded
+D, [2014-01-23T15:21:09.746386 #16156] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:21:09.746564 #16156] DEBUG : Configuration loaded
+D, [2014-01-23T15:26:34.429765 #17514] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:26:34.429840 #17514] DEBUG : Configuration loaded
+D, [2014-01-23T15:28:21.379531 #17602] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:28:21.379618 #17602] DEBUG : Configuration loaded
+D, [2014-01-23T15:30:08.052130 #17671] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:30:08.053410 #17671] DEBUG : Configuration loaded
+D, [2014-01-23T15:32:04.389479 #17797] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:32:04.389552 #17797] DEBUG : Configuration loaded
+D, [2014-01-23T15:33:06.129913 #17871] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:33:06.129991 #17871] DEBUG : Configuration loaded
+D, [2014-01-23T15:48:38.055600 #20799] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:48:38.055691 #20799] DEBUG : Configuration loaded
+D, [2014-01-23T15:51:05.561866 #21449] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:51:05.561940 #21449] DEBUG : Configuration loaded
+D, [2014-01-23T15:52:37.349926 #21871] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:52:37.350001 #21871] DEBUG : Configuration loaded
+D, [2014-01-23T15:52:50.270200 #21955] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:52:50.270267 #21955] DEBUG : Configuration loaded
+D, [2014-01-23T15:53:38.798737 #22123] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T15:53:38.798804 #22123] DEBUG : Configuration loaded
+D, [2014-01-23T16:02:20.630886 #22824] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:02:20.630986 #22824] DEBUG : Configuration loaded
+D, [2014-01-23T16:02:33.044766 #22913] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:02:33.044831 #22913] DEBUG : Configuration loaded
+D, [2014-01-23T16:03:07.535417 #23074] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:03:07.535484 #23074] DEBUG : Configuration loaded
+D, [2014-01-23T16:03:53.400363 #23129] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:03:53.400453 #23129] DEBUG : Configuration loaded
+D, [2014-01-23T16:04:23.705547 #23259] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:04:23.705612 #23259] DEBUG : Configuration loaded
+D, [2014-01-23T16:06:25.016438 #23827] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:06:25.016504 #23827] DEBUG : Configuration loaded
+D, [2014-01-23T16:21:52.981705 #26304] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:21:52.981779 #26304] DEBUG : Configuration loaded
+D, [2014-01-23T16:24:01.230970 #26769] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:24:01.231040 #26769] DEBUG : Configuration loaded
+D, [2014-01-23T16:33:29.269190 #27081] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:33:29.269256 #27081] DEBUG : Configuration loaded
+D, [2014-01-23T16:42:29.772070 #29114] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:42:29.772133 #29114] DEBUG : Configuration loaded
+D, [2014-01-23T16:44:32.193411 #29668] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:44:32.193477 #29668] DEBUG : Configuration loaded
+D, [2014-01-23T16:45:04.316364 #29758] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:45:04.316432 #29758] DEBUG : Configuration loaded
+D, [2014-01-23T16:45:30.115033 #29910] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:45:30.115109 #29910] DEBUG : Configuration loaded
+D, [2014-01-23T16:45:58.390891 #30029] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:45:58.390956 #30029] DEBUG : Configuration loaded
+D, [2014-01-23T16:47:01.280933 #30287] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:47:01.281024 #30287] DEBUG : Configuration loaded
+D, [2014-01-23T16:48:20.753559 #30391] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T16:48:20.753628 #30391] DEBUG : Configuration loaded
+D, [2014-01-23T17:28:02.605614 #8721] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T17:28:02.605678 #8721] DEBUG : Configuration loaded
+D, [2014-01-23T17:31:54.373481 #8853] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T17:31:54.373587 #8853] DEBUG : Configuration loaded
+D, [2014-01-23T17:32:04.465556 #8931] DEBUG : Stonebridge logging initialized
+D, [2014-01-23T17:32:04.465622 #8931] DEBUG : Configuration loaded
+D, [2014-01-24T09:09:59.784111 #28431] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:09:59.784177 #28431] DEBUG : Configuration loaded
+D, [2014-01-24T09:11:05.468873 #28715] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:11:05.468944 #28715] DEBUG : Configuration loaded
+D, [2014-01-24T09:11:23.996920 #28782] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:11:23.996992 #28782] DEBUG : Configuration loaded
+D, [2014-01-24T09:11:51.537780 #28837] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:11:51.537847 #28837] DEBUG : Configuration loaded
+D, [2014-01-24T09:19:18.129745 #30712] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:19:18.129811 #30712] DEBUG : Configuration loaded
+D, [2014-01-24T09:22:18.450743 #30970] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:22:18.450812 #30970] DEBUG : Configuration loaded
+D, [2014-01-24T09:24:31.688178 #31165] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:24:31.688251 #31165] DEBUG : Configuration loaded
+D, [2014-01-24T09:26:38.305063 #31674] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:26:38.305129 #31674] DEBUG : Configuration loaded
+D, [2014-01-24T09:28:26.625551 #32131] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:28:26.625637 #32131] DEBUG : Configuration loaded
+D, [2014-01-24T09:30:21.083510 #32296] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:30:21.083616 #32296] DEBUG : Configuration loaded
+D, [2014-01-24T09:39:19.358214 #455] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:39:19.358282 #455] DEBUG : Configuration loaded
+D, [2014-01-24T09:42:01.501674 #1187] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:42:01.501756 #1187] DEBUG : Configuration loaded
+D, [2014-01-24T09:46:08.586583 #2336] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:46:08.586650 #2336] DEBUG : Configuration loaded
+D, [2014-01-24T09:47:51.251012 #2784] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:47:51.251084 #2784] DEBUG : Configuration loaded
+D, [2014-01-24T09:50:24.301961 #3482] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:50:24.302037 #3482] DEBUG : Configuration loaded
+D, [2014-01-24T09:50:51.107180 #3612] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T09:50:51.107246 #3612] DEBUG : Configuration loaded
+D, [2014-01-24T10:10:08.218813 #8464] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:10:08.218886 #8464] DEBUG : Configuration loaded
+D, [2014-01-24T10:29:50.286031 #14154] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:29:50.286097 #14154] DEBUG : Configuration loaded
+D, [2014-01-24T10:30:11.719704 #14303] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:30:11.719792 #14303] DEBUG : Configuration loaded
+D, [2014-01-24T10:30:24.627264 #14429] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:30:24.627336 #14429] DEBUG : Configuration loaded
+D, [2014-01-24T10:32:04.082013 #14902] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:32:04.082082 #14902] DEBUG : Configuration loaded
+D, [2014-01-24T10:34:45.056594 #15838] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:34:45.056660 #15838] DEBUG : Configuration loaded
+D, [2014-01-24T10:34:58.637927 #15952] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:34:58.637994 #15952] DEBUG : Configuration loaded
+D, [2014-01-24T10:35:26.434721 #16145] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:35:26.434789 #16145] DEBUG : Configuration loaded
+D, [2014-01-24T10:41:13.093688 #18132] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:41:13.093777 #18132] DEBUG : Configuration loaded
+D, [2014-01-24T10:41:56.621137 #18394] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:41:56.621215 #18394] DEBUG : Configuration loaded
+D, [2014-01-24T10:43:18.767195 #18476] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:43:18.767264 #18476] DEBUG : Configuration loaded
+D, [2014-01-24T10:44:34.850158 #18838] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:44:34.850236 #18838] DEBUG : Configuration loaded
+D, [2014-01-24T10:45:08.189944 #19058] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:45:08.190023 #19058] DEBUG : Configuration loaded
+D, [2014-01-24T10:45:34.908942 #19235] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:45:34.909021 #19235] DEBUG : Configuration loaded
+D, [2014-01-24T10:46:03.651504 #19422] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:46:03.651612 #19422] DEBUG : Configuration loaded
+D, [2014-01-24T10:46:38.589659 #19644] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:46:38.589730 #19644] DEBUG : Configuration loaded
+D, [2014-01-24T10:46:53.873123 #19763] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:46:53.873192 #19763] DEBUG : Configuration loaded
+D, [2014-01-24T10:47:18.821019 #19931] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:47:18.821089 #19931] DEBUG : Configuration loaded
+D, [2014-01-24T10:58:17.513131 #21484] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T10:58:17.513218 #21484] DEBUG : Configuration loaded
+D, [2014-01-24T11:00:15.720588 #21555] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T11:00:15.720686 #21555] DEBUG : Configuration loaded
+D, [2014-01-24T11:03:05.382294 #21745] DEBUG : Stonebridge logging initialized
+D, [2014-01-24T11:03:05.382371 #21745] DEBUG : Configuration loaded
