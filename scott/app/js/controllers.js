@@ -32,7 +32,7 @@ angular.module('myApp.controllers', []).
         $http({
           method : 'POST',
           url : 'http://127.0.0.1:9292/jobs/order',
-          data : $scope.aanvraag
+          data : $scope.aanvraag,
           headers : {'Content-Type': 'application/json'}
         }).success(function(data, status, headers, config) {
           $scope.data = data;
