@@ -6,8 +6,8 @@ class Order
 
   # initialize the order class with the orderhash we recieved
   # it should contain
-  def initialize(action, applicatienaam, applicatieserver, template, omgeving)
-    
+  def initialize(order_hash)
+
      @action = action
      @application = applicatienaam
      @type = applicatieserver
