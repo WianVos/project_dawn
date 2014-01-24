@@ -6,9 +6,6 @@ require 'configatron'
 class JiraBackend
 
 
-    def initialize
-      p configatron.basedir
-    end
 
 
     def getCollection(path)
@@ -39,7 +36,6 @@ class JiraBackend
         :content_type => :json },
         :payload => postData.to_json
       )
-      p request
       puts JSON.pretty_generate(postData)
       response = request.execute
       

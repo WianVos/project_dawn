@@ -21,7 +21,6 @@ class Jira < Plugin
 
      task =  workitem[:params]['task']
      item =  workitem[:params]['item']
-     p workitem.fields
      application = workitem.fields['orders']['application']
      environment = workitem.fields['orders']['environment']
      type = workitem[:params]['type']
@@ -35,10 +34,7 @@ class Jira < Plugin
      if task == 'create'
 
       unless workitem.fields["#{item}"]['info'].has_key?('JiraIssue')
-       #issueNr = @jira.createIssue(description="#{task}: #{item}",summary=get_summary_msg(item, workitem.fields["#{item}"]['settings'] ), labels=["#{wfid}", "#{item}"]  )
        issueNr = @jira.createIssue(description=get_description_msg(item, workitem.fields["#{item}"]['settings'] ),summary="#{application}-#{environment}: #{task} #{item}", labels=["#{wfid}", "#{item}"]  )
-
-       #p workitem['fields']['orders']['items'][@type][@item]
        workitem.fields["#{item}"]['info']['JiraIssue'] = issueNr
        workitem.fields["#{item}"]['info']['JiraIssueStatus'] = @jira.getIssueStatus(issueNr)
        workitem.fields["#{item}"]['info']['JiraDone'] = false

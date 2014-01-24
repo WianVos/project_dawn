@@ -24,14 +24,9 @@ class Supervisor < Plugin
   def on_workitem
     item =  workitem[:params]['item']
     plugins = workitem[:params]['plugins']
-
-    p item
     done = false
     plugins.each { | plugin |
-      p plugin
-      p workitem.fields[item]['info']
-      p workitem.fields[item]['info']["#{plugin}Done"]
-        done = true if workitem.fields[item]['info']["#{plugin}Done"] == true || nil
+     done = true if workitem.fields[item]['info']["#{plugin}Done"] == true || nil
     }
 
 

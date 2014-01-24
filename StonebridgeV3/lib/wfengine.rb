@@ -51,8 +51,7 @@ class WfEngine
 
   # get the process status for a job
   def self.process_status(wfid)
-    p @engine.process(wfid).all_tags
-    @engine.process(wfid).inspect
+   @engine.process(wfid).inspect
   end
 
   # get a particular process
