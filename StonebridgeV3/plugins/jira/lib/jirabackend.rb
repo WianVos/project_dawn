@@ -68,8 +68,6 @@ class JiraBackend
         # returns issue key
         issue_template = getJiraIssue(description, summary) 
         issue_template['fields']['labels'] = labels
-        p labels
-        p issue_template
         postCollection("issue", issue_template )['key']
     end
 
