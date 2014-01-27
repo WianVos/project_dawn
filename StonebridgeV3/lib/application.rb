@@ -19,7 +19,7 @@ autoload :ReportManager, "reportmanager.rb"
 
 
 class Application < Sinatra::Application
-
+  set :protection, :except => [:json_csrf]
 
 
 
