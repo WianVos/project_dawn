@@ -1,4 +1,4 @@
-require 'configatron'
+
 require 'logging'
 
 class PluginManager

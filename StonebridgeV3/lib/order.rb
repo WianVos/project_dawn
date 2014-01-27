@@ -81,7 +81,13 @@ class Order
 
 
   def run_proccess
+
     wfid = WfEngine.submit_order(@pdef, @order_hash)
+
+
+    # lets create a report for this process
+    ReportManager.create_report(wfid, @order_hash)
+
     return wfid
   end
 

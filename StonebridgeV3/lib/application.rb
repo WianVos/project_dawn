@@ -14,6 +14,7 @@ require 'logging'
 autoload :PluginManager, "pluginmanager.rb"
 autoload :Plugin, "plugin.rb"
 autoload :WfEngine, "wfengine.rb"
+autoload :ReportManager, "reportmanager.rb"
 
 
 
@@ -27,7 +28,8 @@ class Application < Sinatra::Application
   configatron.basedir = File.expand_path( '../', File.dirname(__FILE__))
   config_dir = File.join(configatron.basedir, '/etc')
   configatron.configure_from_hash(YAML.load_file("#{config_dir}/config.yaml"))
-
+  p "test application"
+  p configatron.instance_variables
   # initialize logging
 
   Logging.logger.root.add_appenders(
@@ -44,6 +46,11 @@ class Application < Sinatra::Application
 
   # Load the plugins
   PluginManager.load_plugins
+
+
+
+  # initialize the reporter
+  ReportManager.load_all_reports
 
   # start the Workflow engine
   WfEngine.start

@@ -36,7 +36,7 @@ class Jira < Plugin
       unless workitem.fields["#{item}"]['info'].has_key?('JiraIssue')
        issueNr = @jira.createIssue(description=get_description_msg(item, workitem.fields["#{item}"]['settings'] ),summary="#{application}-#{environment}: #{task} #{item}", labels=["#{wfid}", "#{item}"]  )
        workitem.fields["#{item}"]['info']['JiraIssue'] = issueNr
-       workitem.fields["#{item}"]['info']['JiraIssueStatus'] = @jira.getIssueStatus(issueNr)
+       workitem.fields["#{item}"]['info']['JiraStatus'] = @jira.getIssueStatus(issueNr)
        workitem.fields["#{item}"]['info']['JiraDone'] = false
       end
      end
@@ -44,7 +44,7 @@ class Jira < Plugin
      if task == 'check'
        issueNr = workitem.fields["#{item}"]['info']['JiraIssue']
        current_status =  @jira.getIssueStatus(issueNr)
-       workitem.fields["#{item}"]['info']['JiraIssueStatus'] = @jira.getIssueStatus(issueNr)
+       workitem.fields["#{item}"]['info']['JiraStatus'] = @jira.getIssueStatus(issueNr)
        workitem.fields["#{item}"]['info']['JiraDone'] = true if current_status == @done_status_string
      end
 

@@ -25,9 +25,15 @@ class Supervisor < Plugin
     item =  workitem[:params]['item']
     plugins = workitem[:params]['plugins']
     done = false
+    wfid = workitem.wfid
+    report = {}
+
     plugins.each { | plugin |
-     done = true if workitem.fields[item]['info']["#{plugin}Done"] == true || nil
+      report[plugin] = workitem.fields[item]['info']["#{plugin}Status"]
+      done = true if workitem.fields[item]['info']["#{plugin}Done"] == true || nil
     }
+
+    ReportManager.add_status(wfid,item,report)
 
 
     workitem.command = 'rewind' unless done == true

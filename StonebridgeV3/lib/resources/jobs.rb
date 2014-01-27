@@ -10,11 +10,7 @@ class Application
 
   get '/status' do
     jobs = WfEngine.processes
-    @job_status = {}
-    jobs.each { |wfid|
-      status_file = File.join(configatron.plugins.reporter.reportsdir, "#{wfid}.yaml")
-      @job_status[wfid] = YAML::load(File.open(status_file)) if File.exists?  status_file
-    }
+    @job_status = ReportManager.get_all_last_status
     json @job_status
   end
 
@@ -31,7 +27,7 @@ class Application
 
 
   delete '/:jobid' do
-    json WfEngine.cancel_process(:jobid)
+    json WfEngine.cancel_process(params[:jobid])
   end
 
 
@@ -70,8 +66,7 @@ class Application
 
   get '/status/:jobid' do
     status = "jobid not recognized"
-    status_file = File.join(configatron.plugins.reporter.reportsdir, "#{params[:jobid]}.yaml")
-    status = YAML::load(File.open(status_file)) if File.exists?  status_file
+    status = ReportManager.get_last_items_status(params[:jobid])
     json status
   end
 
