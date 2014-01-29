@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../StonebridgeAuth/.idea/StonebridgeAuth.iml" filepath="$PROJECT_DIR$/../StonebridgeAuth/.idea/StonebridgeAuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/../StonebridgeV2/.idea/StonebridgeV2.iml" filepath="$PROJECT_DIR$/../StonebridgeV2/.idea/StonebridgeV2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../StonebridgeV3/.idea/StonebridgeV3.iml" filepath="$PROJECT_DIR$/../StonebridgeV3/.idea/StonebridgeV3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/stonebridge.iml" filepath="$PROJECT_DIR$/.idea/stonebridge.iml" />

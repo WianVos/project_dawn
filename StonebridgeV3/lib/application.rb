@@ -16,7 +16,7 @@ autoload :Plugin, "plugin.rb"
 autoload :WfEngine, "wfengine.rb"
 autoload :ReportManager, "reportmanager.rb"
 
-
+enable :sessions
 
 class Application < Sinatra::Application
   set :protection, :except => [:json_csrf]
