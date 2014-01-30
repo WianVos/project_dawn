@@ -5,3 +5,5 @@ ruby "1.9.3"
 gem 'warden'
 gem 'sinatra'
 gem 'omniauth'
+gem 'omniauth-ldap'
+gem 'httplog'

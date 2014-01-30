@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'net/ldap'
 require 'omniauth'
+require 'omniauth-ldap'
+require 'httplog'
 
 
 class LoginManager < Sinatra::Application
@@ -11,9 +13,9 @@ class LoginManager < Sinatra::Application
                      :port => 389,
                      :method => :plain,
                      :base => 'cn=users,ou=diensten,o=KVK,c=NL',
-                     :uid => 'sAMAccountName',
+                     :uid => 'samaccountName',
                      :name_proc => Proc.new {|name| name.gsub(/@.*$/,'')},
-                     :bind_dn => 'OS400-PROFILE=WSALLLOGON,CN=ACCOUNTS,OS400-SYS=AS94AMRE.K94.KVK.NL',
+                     :bind_dn => 'DN=OS400-PROFILE=WSALLLOGON,CN=ACCOUNTS,OS400-SYS=AS94AMRE.K94.KVK.NL',
                      :password => 'L0G0NW4S',
                      :filter => "(&amp;(uid={0})(objectclass=kvkPerson))"
   end

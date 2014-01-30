@@ -13,3 +13,4 @@ gem 'rest-client'
 gem 'json'
 gem 'configatron', '2.13.0'
 gem "logging", "~> 1.8.1"
+gem 'mongo_mapper'

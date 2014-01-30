@@ -1,0 +1,6 @@
+---
+production:
+ adapter: mongodb
+ database: stonebridge
+ host: localhost
+ port: 27017
