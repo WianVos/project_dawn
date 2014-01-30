@@ -25,8 +25,8 @@ angular.module('myApp.controllers', []).
   .controller('MyCtrl2', [function() {
 
   }])
-  .controller('Aanvragen', [ '$scope', '$http',
-    function($scope, $http) {
+  .controller('Aanvragen', [ '$scope', '$http', '$window',
+    function($scope, $http, $window) {
       $scope.aanvraag = { 'action':'create', 'middleware' : { 'db2' : { 'include':'false'}, 'mq': { 'include':'false'}, 'il': { 'include':'false' } } };
       $scope.submitaanvraag = function() {
         $http({
@@ -40,6 +40,9 @@ angular.module('myApp.controllers', []).
           $scope.status = status;
           alert(data);
         });
+      }
+      $scope.reload = function() {
+        $window.location.reload();
       }
     }
   ])
@@ -61,10 +64,8 @@ angular.module('myApp.controllers', []).
     function($scope, $http) {
       $scope.loading = true;
       $http({
-        url: 'http://127.0.0.1:9292/jobs',
+        url: 'http://127.0.0.1:9292/jobs/status',
         method: "GET",
-        //params: { 'query' : '["=", "status", "failure"]' }
-        //params: { 'query' : '[">", "timestamp", "2014-01-10T00:00:00+01:00"]'}
       }).success(function(data, status, headers, config) {
         $scope.data = data;
         $scope.loading = false;
