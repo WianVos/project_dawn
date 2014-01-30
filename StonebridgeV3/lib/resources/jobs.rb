@@ -9,6 +9,9 @@ class Application
   end
 
   get '/status' do
+    headers['Access-Control-Allow-Origin'] = "*"
+    headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+    headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
     jobs = WfEngine.processes
     @job_status = ReportManager.get_all_last_status
     json @job_status
@@ -65,6 +68,9 @@ class Application
 
 
   get '/status/:jobid' do
+    headers['Access-Control-Allow-Origin'] = "*"
+    headers['Access-Control-Allow-Methods'] = "POST, OPTIONS"
+    headers['Access-Control-Allow-Headers'] ="accept, authorization, origin, Content-Type"
     status = "jobid not recognized"
     status = ReportManager.get_last_items_status(params[:jobid])
     json status
