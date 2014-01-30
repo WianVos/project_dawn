@@ -25,8 +25,8 @@ angular.module('myApp.controllers', []).
   .controller('MyCtrl2', [function() {
 
   }])
-  .controller('Aanvragen', [ '$scope', '$http',
-    function($scope, $http) {
+  .controller('Aanvragen', [ '$scope', '$http', '$window',
+    function($scope, $http, $window) {
       $scope.aanvraag = { 'action':'create', 'middleware' : { 'db2' : { 'include':'false'}, 'mq': { 'include':'false'}, 'il': { 'include':'false' } } };
       $scope.submitaanvraag = function() {
         $http({
@@ -40,6 +40,9 @@ angular.module('myApp.controllers', []).
           $scope.status = status;
           alert(data);
         });
+      }
+      $scope.reload = function() {
+        $window.location.reload();
       }
     }
   ])
