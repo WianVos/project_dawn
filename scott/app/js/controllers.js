@@ -61,10 +61,8 @@ angular.module('myApp.controllers', []).
     function($scope, $http) {
       $scope.loading = true;
       $http({
-        url: 'http://127.0.0.1:9292/jobs',
+        url: 'http://127.0.0.1:9292/jobs/status',
         method: "GET",
-        //params: { 'query' : '["=", "status", "failure"]' }
-        //params: { 'query' : '[">", "timestamp", "2014-01-10T00:00:00+01:00"]'}
       }).success(function(data, status, headers, config) {
         $scope.data = data;
         $scope.loading = false;
